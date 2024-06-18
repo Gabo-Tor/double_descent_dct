@@ -22,6 +22,16 @@ From here I borrowed the idea of using compressibility as a measure of function 
 https://arxiv.org/abs/2403.02241
 
 
+## Usage
+Run with Python, you'll need numpy, tqdm, matplotlib, and scikit-learn libraries.
+
+`double_descent_2D.py` plots the first figure in the poster and generates the data for the second figure.
+Also generates the reconstructions for each degree.
+You can change the image by changing the function `f2` to `f1` in the code.
+
+`complexity.py` generates the second figure in the poster.
+
+
 ## L2 vs L1 Regularization
 Using L2 or L1 regularization made no difference in the results.
 
