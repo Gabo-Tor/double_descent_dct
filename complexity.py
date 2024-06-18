@@ -10,15 +10,15 @@ test, test_reg = [], []
 
 for file in os.listdir(FOLDER):
     if file.endswith("_comp.png") and file.rstrip("_comp.png").isnumeric():
-        X.append(int(file.rstrip("_comp.png")))
+        X.append(int(file.rstrip("_comp.png"))**2)
         test.append(os.path.getsize(os.path.join(FOLDER, file)))
     if file.endswith("_reg_comp.png"):
-        X_reg.append(int(file.rstrip("_reg_comp.png")))
+        X_reg.append(int(file.rstrip("_reg_comp.png"))**2)
         test_reg.append(os.path.getsize(os.path.join(FOLDER, file)))
 
 # Normalize
-X = list(map(lambda x: x / 60, X))
-X_reg = list(map(lambda x: x / 60, X_reg))
+X = list(map(lambda x: x / (60**2), X))
+X_reg = list(map(lambda x: x / (60**2), X_reg))
 
 min_test = min(test)
 test = list(map(lambda x: x / min_test, test))
