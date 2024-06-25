@@ -2,7 +2,7 @@
 This is a simple demonstration of how regularization can mitigate the double descent phenomenon in a simple machine learning.
 
 ## Poster
-![SOON!](poster.png)
+![poster](poster.png)
 
 ## Poster notes
 The testing error curve in the hyperparametrized region corresponds to the least L2 norm solution.
