@@ -1,5 +1,5 @@
 # Regularization Does Away With Double Descent
-This is a simple demonstration of how regularization can mitigate the double descent phenomenon in a simple machine learning.
+This is a simple demonstration of how regularization can mitigate the double descent phenomenon in a simple machine learning problem.
 
 ## Poster
 ![poster](poster.png)
